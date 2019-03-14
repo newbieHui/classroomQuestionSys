@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/top.png" type="image/x-icon"/>
+    <title>课堂点名系统</title>
+    <link rel="stylesheet" href="../css/el.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body style="background: url(../img/background.jpg);background-size: cover;">
+<div id="app" class="loginBox">
+    <role-component></role-component>
+</div>
+<script type="text/x-template" id="role-template">
+    <div>
+        <div class="loginTitle">学生课堂点名系统</div>
+        <div>
+            <el-form :model="formStore" ref="ruleForm2" label-width="100px">
+                <el-form-item label="姓名" prop="name" style="margin-top: 60px;margin-right: 70px">
+                    <el-input type="text" v-model="formStore.name" readonly medium></el-input>
+                </el-form-item>
+                <el-form-item>
+                    <div align="center" style="margin-left: -60px;margin-top: 50px">
+                        <el-button type="primary" @click="confirmButton" size="large">提 问</el-button>
+                        <el-button style="margin-left: 30px" size="large" @click="stopButton">停 止</el-button>
+                    </div>
+                </el-form-item>
+            </el-form>
+        </div>
+    </div>
+</script>
+<script src="../lib/vue.min.js"></script>
+<script src="../lib/vue-resource.min.js"></script>
+<script src="../lib/el.js"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>

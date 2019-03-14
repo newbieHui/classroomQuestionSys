@@ -1,0 +1,28 @@
+.loginBox{
+    width :600px;
+    height:400px;
+    background:rgba(255, 255, 255,0);
+    border:1px rgba(255, 255, 255,0) solid;
+    border-radius:4px;
+    box-sizing:border-box;
+    box-shadow:2px 2px 6px rgba(54,64,76,0.6), -2px 2px 6px rgba(54,64,76,0.6);
+    padding:15px; margin:200px auto;
+}
+.loginTitle{
+    height:80px;
+    line-height:80px;
+    font-size:35px;
+    color:#fff;
+    font-family:"微软雅黑";
+    text-align: center;
+}
+.el-input__inner{
+    height: 50px;
+    font-size: 28px;
+}
+.el-form-item__label{
+    color: #fff;
+}
+.el-form-item__label{
+    font-size: 28px;
+}
